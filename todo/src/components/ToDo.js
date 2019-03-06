@@ -8,7 +8,7 @@ class Todo extends Component {
     this.props.finished(this.props.index);
   }
 
-  render() {
+  render() {  // allows user-created list that can be checked as 'done'
     return (
       <li>
         <input type="checkbox" onChange={this.finished.bind(this)}/>
